@@ -1,5 +1,15 @@
 body {
   font-size: 18px;
+  background-color: #efefef;
+  font-family: "Trip Sans Reg";
+}
+
+.regular {
+  font-family: "Trip Sans Reg";
+}
+
+.medium {
+  font-family: "Trip Sans Med";
 }
 
 .container1 {
@@ -7,34 +17,44 @@ body {
   width: 1024px;
   height: 100px;
   margin: auto;
-  /* padding-bottom: 60px; */
   display: flex;
   flex: 1;
 }
 
-.logo {
+.site-logo {
   object-fit: contain;
   flex: 1;
-  border: 2px dashed red;
-
+  border: 1px dashed red;
+  margin-right: 25px;
   width: 200px;
-  /* position: absolute; */
 }
 
 .header-searchbar {
-  flex: 1;
-  border: red 2px dashed;
-}
-
-.container1 ul {
-  flex: 3;
   display: flex;
-  border: dashed red 2px;
+  flex: 3;
+  border: red 2px dashed;
+  /* justify-content: center; */
   align-items: center;
 }
 
-.container1 ul li {
-  /* flex: ; */
-  border: dashed blue 2px;
+.links {
+  justify-content: flex-end;
+  flex: 3;
+  display: flex;
+  border: dashed red 2px;
+}
+
+.links ul {
+  display: flex;
+  flex: 1;
   justify-content: center;
+}
+
+.links ul li {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border: dashed blue 2px;
+  /* margin-left: 10px; */
 }
