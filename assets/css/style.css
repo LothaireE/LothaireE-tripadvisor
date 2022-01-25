@@ -1,21 +1,21 @@
 body {
   font-size: 18px;
   background-color: #efefef;
-  font-family: "Trip Sans Reg";
+  font-family: "Trip Sans Reg" sans-serif;
 }
 
-.regular {
+/* .regular {
   font-family: "Trip Sans Reg";
 }
 
 .medium {
   font-family: "Trip Sans Med";
-}
+} */
 
 .container1 {
   border: 1px dashed black;
   width: 1024px;
-  height: 100px;
+  height: 50;
   margin: auto;
   display: flex;
   flex: 1;
@@ -32,8 +32,11 @@ body {
 .header-searchbar {
   display: flex;
   flex: 3;
-  border: red 2px dashed;
-  /* justify-content: center; */
+  border: #8a98b1 solid 2px;
+  border-radius: 25px;
+  color: #efefef;
+  box-sizing: border-box;
+  /* margin-right: 100px; */
   align-items: center;
 }
 
@@ -56,5 +59,11 @@ body {
   justify-content: center;
   align-items: center;
   border: dashed blue 2px;
-  /* margin-left: 10px; */
+}
+
+.links ul li:last-child {
+  flex: 2;
+  border-radius: 20px;
+  background-color: black;
+  color: #efefef;
 }
