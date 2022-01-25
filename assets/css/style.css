@@ -1,0 +1,40 @@
+body {
+  font-size: 18px;
+}
+
+.container1 {
+  border: 1px dashed black;
+  width: 1024px;
+  height: 100px;
+  margin: auto;
+  /* padding-bottom: 60px; */
+  display: flex;
+  flex: 1;
+}
+
+.logo {
+  object-fit: contain;
+  flex: 1;
+  border: 2px dashed red;
+
+  width: 200px;
+  /* position: absolute; */
+}
+
+.header-searchbar {
+  flex: 1;
+  border: red 2px dashed;
+}
+
+.container1 ul {
+  flex: 3;
+  display: flex;
+  border: dashed red 2px;
+  align-items: center;
+}
+
+.container1 ul li {
+  /* flex: ; */
+  border: dashed blue 2px;
+  justify-content: center;
+}
