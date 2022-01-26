@@ -4,13 +4,13 @@ body {
   font-family: "Trip Sans Reg", sans-serif;
 }
 
-/* .regular {
+.regular {
   font-family: "Trip Sans Reg";
 }
 
 .medium {
   font-family: "Trip Sans Med";
-} */
+}
 
 .container1 {
   border: 1px dashed black;
@@ -291,8 +291,9 @@ h4 {
 }
 .Paris-block {
   /* box-sizing: border-box; */
-  height: 300px;
+  height: 350px;
   display: flex;
+  border: solid chartreuse; 10px
 }
 .se-divertir {
   border: solid 2px green;
@@ -301,6 +302,7 @@ h4 {
 
 .se-divertir p {
   margin-bottom: 15px;
+  
 }
 .carroussel {
   border: solid 2px pink;
@@ -311,7 +313,8 @@ h4 {
   overflow-x: scroll;
 }
 
-.carroussel div {
+.carroussel > div {
+  position: relative;
   width: 300px;
   height: 350px;
   border: black 2px solid;
@@ -321,7 +324,18 @@ h4 {
 .carroussel div img {
   object-fit: cover;
   width: 100%;
-  height: 100ù;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fire {
+  position: absolute;
+  top: 95px;
+  left: 10px;
 }
 
 /* .carroussel:root {
