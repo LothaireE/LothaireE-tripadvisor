@@ -1,7 +1,7 @@
 body {
   font-size: 18px;
   background-color: #efefef;
-  font-family: "Trip Sans Reg" sans-serif;
+  font-family: "Trip Sans Reg", sans-serif;
 }
 
 /* .regular {
@@ -17,6 +17,7 @@ body {
   width: 1024px;
   height: 50;
   margin: auto;
+  padding-bottom: 50px;
   display: flex;
   flex: 1;
 }
@@ -66,4 +67,114 @@ body {
   border-radius: 20px;
   background-color: black;
   color: #efefef;
+}
+
+.container2 {
+  border: 1px dashed black;
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+h1 {
+  display: flex;
+  flex: 1;
+  /* height: 60px; */
+  width: auto;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Trip Sans Med";
+  padding-bottom: 25px;
+  border: black dashed 2px;
+}
+h1 span {
+  color: #ff5d5d;
+}
+
+h2 {
+  display: flex;
+  flex: 1;
+  width: auto;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Trip Sans Med";
+  line-height: 33px;
+  padding-bottom: 20px;
+}
+
+.filters ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.filters ul li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  border: solid black 1px;
+  border-radius: 15px;
+  display: flex;
+  /* flex: 1; */
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  width: 150px;
+}
+
+.front-images {
+  margin-top: 35px;
+  height: 350px;
+  display: flex;
+}
+.front-left img {
+  width: 100%;
+}
+
+.front-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+}
+
+.front-right img {
+  height: 50%;
+}
+
+.front-right img:first-child {
+  margin-bottom: 3px;
+}
+
+.city {
+  gap: 20px;
+  display: flex;
+  border: dashed 2px red;
+}
+
+.city-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: dashed 2px blue;
+}
+.city-map {
+  border: purple dashed 2px;
+  flex: 1;
+  object-fit: cover;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.city-map img {
+  flex: 1;
+  display: flex;
+  object-fit: cover;
+  width: 400px;
 }
