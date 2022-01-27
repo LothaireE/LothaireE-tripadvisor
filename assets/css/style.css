@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   max-width: 1184px;
   margin: auto;
 }
@@ -35,10 +35,16 @@ footer {
   align-items: center;
 }
 
+footer > div a {
+  text-decoration: none;
+}
+footer > div a:hover {
+  text-decoration: none;
+}
 /* la reponse! */
 
 .pictures {
-  border: olivedrab solid 8px;
+  /* border: olivedrab solid 8px; */
   height: 430px;
   margin: 25px 0px;
   display: flex;
@@ -74,7 +80,7 @@ footer {
   border-bottom-right-radius: 20px;
 }
 header {
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   max-width: 1184px;
   margin: auto;
   padding-bottom: 50px;
@@ -85,7 +91,7 @@ header {
 .site-logo {
   object-fit: contain;
   flex: 1;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   margin-right: 25px;
   width: 200px;
 }
@@ -95,7 +101,7 @@ header {
   flex: 3;
   border: #8a98b1 solid 2px;
   border-radius: 25px;
-  color: #efefef;
+  color: black;
   box-sizing: border-box;
   /* margin-right: 100px; */
   align-items: center;
@@ -110,7 +116,6 @@ header {
 .primary-nav .menu-item {
   padding: 20px;
   margin: 0 15px;
-  background-color: violet;
 }
 
 .primary-nav button {
@@ -138,7 +143,7 @@ h1 {
   font-weight: bold;
   font-family: "Trip Sans Med";
   padding-bottom: 25px;
-  border: black dashed 2px;
+  /* border: black dashed 2px; */
 }
 h1 span {
   color: #ff5d5d;
@@ -232,7 +237,7 @@ h4 {
 
 .city-text {
   flex: 1;
-  border: orange solid 3px;
+  /* border: orange solid 3px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -251,7 +256,7 @@ h4 {
 } */
 
 .location {
-  border: solid olivedrab 3px;
+  /* border: solid olivedrab 3px; */
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -284,7 +289,7 @@ h4 {
 }
 
 .location-map {
-  border: rgb(111, 216, 6) dashed 2px;
+  /* border: rgb(111, 216, 6) dashed 2px; */
   flex: 1;
   object-fit: cover;
   width: 400px;
@@ -308,7 +313,7 @@ h4 {
   box-sizing: border-box;
   height: 350px;
   display: flex;
-  border: chartreuse solid 3px;
+  /* border: chartreuse solid 3px; */
 }
 .se-divertir {
   flex: 1;
@@ -320,7 +325,7 @@ h4 {
 }
 .carroussel {
   box-sizing: border-box;
-  border: purple solid 3px;
+  /* border: purple solid 3px; */
   flex: 3;
   margin: 0 auto;
   display: flex;
@@ -372,11 +377,14 @@ h4 {
 }
 
 @media (max-width: 1184px) and (min-width: 769px) {
-  .container {
-    /* display: flex;
-    margin: auto; */
-    /* width: 100%; */
+  /* .container {
+    display: flex;
+    margin: auto;
+    width: 100%;
     background-color: orchid;
+  } */
+  .container {
+    margin: 0px 10px;
   }
   .primary-nav span {
     display: none;
@@ -397,9 +405,9 @@ h4 {
   }
 }
 @media (max-width: 768px) {
-  .container {
+  /* .container {
     background-color: turquoise;
-  }
+  } */
   .primary-nav {
     display: none;
   }
@@ -422,11 +430,21 @@ h4 {
   }
   .secondary-nav p {
     flex-shrink: 0;
-    /* width: 500px; */
-    width: 33%;
+    white-space: nowrap;
+    /* margin-right: 25px; */
+
+    /* width: 33%; */
+  }
+
+  .secondary-nav i {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .pictures {
     width: 100%;
+  }
+  .col-1 img {
+    border-radius: 0%;
   }
   .col-2 {
     display: none;
@@ -440,6 +458,11 @@ h4 {
     display: none;
   }
   .Paris {
-    height: 100%;
+    height: 150%;
+  }
+  footer > div {
+    text-align: center;
+    width: 200px;
+    /* line-height: 20px; */
   }
 }
