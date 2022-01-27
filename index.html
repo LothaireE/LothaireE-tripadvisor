@@ -21,38 +21,33 @@
     ></script>
   </head>
   <body>
-    <header class="container1">
-      <img
-        class="site-logo"
-        src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-        alt="logo-tripadvisor"
-      />
-      <div class="header-searchbar">🔍 search bar à incorporer</div>
-      <!-- <div class="links">
-        <ul>
-          <li>Avis</li>
-          <li>Voyages</li>
-          <li>Alerte</li>
-          <li>Connectez-vous</li>
-        </ul>
-      </div> -->
-      <nav class="primary-nav">
-        <div class="menu-item">
-          <i class="fas fa-star"></i>
-          <span>Avis</span>
-        </div>
-        <div class="menu-item">
-          <i class="fas fa-star"></i>
-          <span>Voyages</span>
-        </div>
-        <div class="menu-item">
-          <i class="fas fa-star"></i>
-          <span>Alerte</span>
-        </div>
-        <button>Connectez-vous</button>
-      </nav>
-    </header>
-    <main class="container2">
+    
+    <main class="container">
+        
+        <header>
+            <img
+              class="site-logo"
+              src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+              alt="logo-tripadvisor"
+            />
+            <div class="header-searchbar">🔍 search bar à incorporer</div>
+            <i class="fas fa-search hidden"></i>
+            <nav class="primary-nav">
+              <div class="menu-item">
+                <i class="fas fa-star"></i>
+                <span>Avis</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-star"></i>
+                <span>Voyages</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-star"></i>
+                <span>Alerte</span>
+              </div>
+              <button>Connectez-vous</button>
+            </nav>
+          </header>
       <h1>
         <p><span>Explorez</span> Paris</p>
       </h1>
@@ -84,16 +79,31 @@
         </p>
       </nav>
 
-      <div class="front-images">
-        <div class="front-left">
-          <img src="./assets/img/caption-canal.jpeg" alt="seine" />
+      <!-- mes images -->
+
+      <div class="pictures">
+        <div class="col-1">
+            <img src="./assets/img/caption-canal.jpeg" alt="seine" />
         </div>
-        <div class="front-right">
-          <img src="./assets/img/caption-couple.jpeg" alt="couple" />
-          <img src="./assets/img/caption-tour-effeil.jpeg" alt="tour-effeil" />
+        <div class="col-2">
+            <img src="./assets/img/caption-couple.jpeg" alt="couple" />
+            <img src="./assets/img/caption-tour-effeil.jpeg" alt="tour-effeil" />
         </div>
-      </div>
+
+        </div>
+
+      
+        <div class="line">
+            <div>
+            <span>Europe</span><span>></span><span>France</span><span>></span><span>Ile-de-France</span><span>></span><span>Paris </span><div><i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <div>Visiter Paris</div>
+
+            </div>
+        
       <div class="city">
+          <!-- description-->
         <div class="city-text">
           <h2>La Ville Lumière éblouit en tous points</h2>
           <p>
@@ -113,7 +123,9 @@
               créez un voyage pour enregistrer et organiser toutes vos idées et
               les visualiser sur une carte
             </p>
-            <nav>Créez un voyage</nav>
+            
+                <button>Créez un voyage</button>
+            
           </div>
           <div class="location-map">
             <img src="./assets/img/map.png" alt="carte de Paris" />
@@ -132,39 +144,375 @@
             <nav>Tout afficher</nav>
           </div>
           <div class="carroussel">
-            <div class="Paris-Tour-Effeil">
+            <div>
               <img src="./assets/img//eiffeltoren.jpeg" alt="Tour-Effeil" />
               <img src="" alt="" />
-              <h4>Tour Eiffel</h4>
-              <div class="heart">
-                <i class="far fa-heart heart"></i>
-              </div>
+              <div class="heart"><i class="far fa-heart heart"></i></div>
               <div class="fire">
                 <i class="fas fa-fire-alt fire"></i>
               </div>
-
+              <h4>Tour Eiffel</h4>
               <p>
                 Tours et plateformes d'observation, Monuments & Points d'intérêt
               </p>
             </div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-            <div>11</div>
-            <div>12</div>
-            <div>13</div>
-            <div>14</div>
-            <div>15</div>
+            <div>
+              <img src="./assets/img/caption-louvre.jpeg" alt="Louvre" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Musée du Louvre</h4>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/arc-de-triomphe-at-night.jpeg"
+                alt="arc-de-triomphe"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+
+              <h4>Arc de Triomphe</h4>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/vue-de-la-cour-d-honneur.jpeg"
+                alt="musée-rodin"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Musée Rodin</h4>
+              <p>Musées spécialisés</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/the-amazingly-detailed.jpeg"
+                alt="notre-dame"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Cathédrale Notre-Dame de Paris</h4>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/the-bookstore.jpeg"
+                alt="librairie-shakespeare"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Librairie Shakespeare and Company</h4>
+              <p>Bibliothèques, Grands magasins</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/20180601-122841-largejpg.jpeg"
+                alt="Orsay"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Musée d'Orsay</h4>
+              <p>Musée d'art</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/marche-vernaison-maison.jpeg"
+                alt="Saint-Ouen"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div clas="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Marché aux Puces de Saint-Ouen</h4>
+              <p>Antiquaires, Marchés aux puces & Marchés de rue</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/basilica-del-sagrado.jpeg"
+                alt="Sacré-Cœur"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Basilique du Sacré-Cœur de Montmartre</h4>
+              <p>Églises et cathédrales</p>
+            </div>
+            <div>
+              <img src="./assets/img/jardin-des-tuileries.jpeg" alt="" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Jardin des Tuileries</h4>
+              <p>Jardins</p>
+            </div>
+          </div>
+        </div>
+        <div class="Paris-block">
+          <div class="se-divertir">
+            <h3>Se reposer</h3>
+            <p>Un mélange de charme, de symboles et de modernité.</p>
+            <nav>Tout afficher</nav>
+          </div>
+          <div class="carroussel">
+            <div>
+              <img src="./assets/img//le-bristol-paris-colonnade.jpeg" alt="Bristol" />
+              <img src="" alt="" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Le Bristol Paris</h4>
+              <p></p>
+            </div>
+            <div>
+              <img src="./assets/img/detail-lareserve.jpeg" alt="reserve" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>La Réserve Paris - Hotel and Spa</h4>
+              <p></p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/exterior.jpeg"
+                alt="four-season"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+
+              <h4>Four Seasons Hotel George V</h4>
+              <p></p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/hotel-de-crillon.jpeg"
+                alt="crillon"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Hôtel de Crillon, A Rosewood Hotel</h4>
+              <p></p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/le-meurice-chambre-superieure.jpeg"
+                alt="Meurice"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Le Meurice</h4>
+              <p></p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/hotel-des-grands-boulevards.jpeg"
+                alt="hotel-des-grands-boulevards"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Hotel des Grands Boulevards</h4>
+              <p></p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/the-hoxton-paris.jpeg"
+                alt="Orsay"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>The Hoxton, Paris</h4>
+              <p></p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/hotel-henriette.jpeg"
+                alt="hotel-henriette"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div clas="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Hôtel Henriette</h4>
+              <p></p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/hidden-hotel-by-elegancia.jpeg"
+                alt="hidden-hotel-by-elegancia"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>Hidden Hotel</h4>
+              <p></p>
+            </div>
+            <div>
+              <img src="./assets/img/hotel-signature-st-germain.jpeg" alt="hotel-signature-st-germain" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Hôtel Signature Saint Germain des Près</h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="Paris-block">
+          <div class="se-divertir">
+            <h3>Se restaurer</h3>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <nav>Tout afficher</nav>
+          </div>
+          <div class="carroussel">
+            <div>
+              <img src="./assets/img/verjus.jpeg" alt="verjus" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Verjus</h4>
+              <p>
+                €€€€ • Française, Européenne, Moderne
+              </p>
+            </div>
+            <div>
+              <img src="./assets/img/caption114.jpeg" alt="114" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>114 Faubourg</h4>
+              <p>€€€€ • Française, Européenne, Végétariens bienvenus</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/frenchie.jpeg"
+                alt="frenchie"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+
+              <h4>Frenchie</h4>
+              <p>€€€€ • Française, Végétariens bienvenus, Plats sans gluten</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/restaurant-aspic-quentin.jpeg"
+                alt="ASPIC"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>ASPIC</h4>
+              <p>€€€€ • Française, Européenne, Moderne</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/collette.jpeg"
+                alt="collette"/>
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>La Table de Colette</h4>
+              <p>€€€€ • Française, Européenne, Saine</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/terrasse-de-gigi.jpeg"
+                alt="librairie-shakespeare"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Crêperie Gigi</h4>
+              <p>€€-€€€ • Française, Végétariens bienvenus, Choix végétaliens</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/Juveniles.jpeg"
+                alt="Juveniles"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Juveniles Wine Bar</h4>
+              <p>€€-€€€ • Française, Européenne, Bar à vins</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/barav.jpeg"
+                alt="Saint-Ouen"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div clas="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Le Barav</h4>
+              <p>A€€-€€€ • Française, Bar à vins</p>
+            </div>
+            <div>
+              <img
+                src="./assets/img/pedzouille.jpeg"
+                alt="pedzouille"
+              />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Pedzouille</h4>
+              <p>€€-€€€ • Française, Européenne</p>
+            </div>
+            <div>
+              <img src="./assets/img/jardin-des-tuileries.jpeg" alt="" />
+              <div class="heart"><i class="far fa-heart heart"></i></div>
+              <div class="fire">
+                <i class="fas fa-fire-alt fire"></i>
+              </div>
+              <h4>Le Rigmarole</h4>
+              <p>€€€€ • Française, Japonaise, Internationale</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+        
+        <div><i class="far fa-sad-tear"></i><span> Made at Le Reacteur by "n'a pas souhaité divulguer son identité" - 2022</span>
+        </div>
+    
+   
+
+    </footer>
   </body>
 </html>
